@@ -1,0 +1,19 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.pyc
+
+# 项目数据输出（代理池结果文件，运行生成）
+data/
+data_verify/
+
+# 诊断脚本生成的结果
+diag_*.out
+diag_*.json
+
+# 临时文件
+*.tmp
+run_verify.log
+
+# IDE / 工具目录
+.codebuddy/
