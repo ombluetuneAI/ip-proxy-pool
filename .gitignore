@@ -3,12 +3,13 @@ __pycache__/
 *.py[cod]
 *.pyc
 
-# 项目数据输出（代理池结果文件，运行生成）
-data/
-data_verify/
+# 项目数据输出：data/ 下的有效结果文件需入库（供 Actions 回灌与历史留存）
+# 注意：data/ 不再忽略，但以下其内容仍忽略：
+data_verify/      # 本地临时验证目录，不入库
 
 # 离线 GeoIP 数据库（外部下载，体积较大，不入库）
 *.mmdb
+# 验证/GeoIP 缓存随 data/ 一起入库（无需忽略）
 
 # 诊断脚本生成的结果
 diag_*.out

@@ -94,6 +94,16 @@ SOURCES = [
         "url": "https://proxylist.geonode.com/api/proxy-list?limit=500&page=1&sort_by=lastChecked&sort_type=desc",
         "kind": "json_api",
     },
+
+    # ---- 本地有效数据回灌（默认关闭，仅 Actions 或 --sources local-valid 启用）----
+    # 读取上轮落盘的 data/cn_proxies.json + data/foreign_proxies.json（回退 .txt）
+    {
+        "name": "local-valid",
+        "enabled": False,
+        "type": "local_file",
+        "cn_json": "cn_proxies.json",
+        "foreign_json": "foreign_proxies.json",
+    },
 ]
 
 # ==================== 请求参数 ====================

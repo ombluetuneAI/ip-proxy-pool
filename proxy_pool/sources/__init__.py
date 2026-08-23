@@ -11,6 +11,7 @@ import config
 from proxy_pool.models import Proxy, dedupe
 from proxy_pool.sources.base import SOURCE_REGISTRY, BaseSource
 from proxy_pool.sources.github_lists import GitHubListSource
+from proxy_pool.sources.local_file import LocalValidSource
 from proxy_pool.sources.open_source_api import OpenSourceApiSource
 from proxy_pool.sources.websites import HtmlTableSource, JsonApiSource
 
@@ -56,6 +57,15 @@ def build_sources(sources_cfg: Iterable[dict] | None = None) -> list[BaseSource]
                 else:
                     logger.warning("  [%s] 未知 website 类型，已跳过", name)
                     continue
+            elif kind == "local_file":
+                from pathlib import Path
+
+                out_dir = Path(config.OUTPUT_DIR)
+                inst = LocalValidSource(
+                    cn_json=str(out_dir / cfg["cn_json"]),
+                    foreign_json=str(out_dir / cfg["foreign_json"]),
+                    source_name=name,
+                )
             else:
                 logger.warning("  [%s] 未知数据源类型 %r，已跳过", name, kind)
                 continue

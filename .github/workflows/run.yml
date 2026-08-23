@@ -1,0 +1,70 @@
+name: 代理池定时抓取
+
+on:
+  schedule:
+    # 每 4 小时执行一次（UTC 时间，0/4/8/12/16/20 点）
+    - cron: "0 */4 * * *"
+  workflow_dispatch:  # 允许在 GitHub 网页手动触发
+
+permissions:
+  contents: write   # 需要写权限以 commit/push 有效数据回仓库
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 下载离线 GeoIP 库（失败则自动回退在线查询）
+        run: |
+          # 已验证可用链接（sapics/ip-location-db Release latest 资产）
+          url="https://github.com/sapics/ip-location-db/releases/download/latest/geolite2-country.mmdb"
+          if curl -fsSL -o geolite2-country.mmdb "$url"; then
+            echo "GeoIP 离线库下载成功：$url"
+          else
+            echo "::warning::GeoIP 离线库下载失败，将使用在线查询（代码已内置回退）"
+          fi
+
+      - name: 运行代理池抓取与过滤
+        run: |
+          python main.py \
+            --sources monosans-http,thespeedx-http,stormsia-http,geonode,local-valid \
+            --concurrency 200 \
+            --timeout 5 \
+            --max-latency 5
+
+      - name: 提交有效数据回仓库（含验证缓存，供下轮回灌）
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # data/ 结果已被 .gitignore 放开（*.mmdb 仍忽略）
+          git add data/
+          # 仅当有变化才提交，避免空 commit 触发循环
+          if git diff --cached --quiet; then
+            echo "data/ 无变化，跳过提交"
+          else
+            git commit -m "chore: 自动更新有效代理池（$(date -u +'%Y-%m-%dT%H:%M:%SZ')）"
+            git push
+          fi
+
+      - name: 上传结果产物（保留最近一次 data/ 输出）
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: proxy-pools
+          path: data/
+          retention-days: 7
