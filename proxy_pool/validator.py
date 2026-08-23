@@ -16,6 +16,7 @@ from aiohttp_socks import ProxyConnector as SocksProxyConnector
 from python_socks import ProxyType
 
 import config
+from proxy_pool.cache import VerificationCache
 from proxy_pool.models import Proxy
 
 logger = logging.getLogger(__name__)
@@ -68,18 +69,37 @@ async def verify_proxy(proxy: Proxy, target_url: str) -> bool:
             await connector.close()
 
 
-async def verify_all(proxies: list[Proxy], target_url: str) -> list[Proxy]:
-    """并发验证代理列表，返回有效子集（已写入 latency）。"""
+async def verify_all(
+    proxies: list[Proxy],
+    target_url: str,
+    cache: "VerificationCache | None" = None,
+) -> list[Proxy]:
+    """并发验证代理列表，返回有效子集（已写入 latency）。
+
+    cache 提供时：命中缓存的代理直接复用结果、不再发请求；新验证的结果回写缓存，
+    便于 10 万量级断点续跑、避免对同一代理重复打网络。
+    """
     if not proxies:
         return []
+    if cache is not None:
+        todo, hit_ok = cache.filter_unverified(proxies)
+        if not todo:
+            logger.info("验证完成：缓存全覆盖，无需实际请求")
+            return hit_ok
+        proxies = todo
+
     sem = asyncio.Semaphore(config.VERIFY_CONCURRENCY)
 
     async def _limited(p: Proxy) -> Proxy | None:
         async with sem:
             ok = await verify_proxy(p, target_url)
+            if cache is not None:
+                cache.record(p, ok)
             return p if ok else None
 
     results = await asyncio.gather(*(_limited(p) for p in proxies))
     valid = [r for r in results if r is not None]
+    if cache is not None:
+        valid = hit_ok + valid  # 合并断点续跑命中的有效代理
     logger.info("验证完成：%d 个候选，%d 个有效", len(proxies), len(valid))
     return valid

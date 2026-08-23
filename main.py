@@ -9,10 +9,12 @@ import argparse
 import asyncio
 import logging
 import sys
+from pathlib import Path
 
 import aiohttp
 
 import config
+from proxy_pool.cache import GeoCache, VerificationCache
 from proxy_pool.classifier import classify
 from proxy_pool.output import save_pools
 from proxy_pool.sources import build_sources, fetch_all
@@ -59,6 +61,11 @@ def parse_args() -> argparse.Namespace:
         "--skip-geoip",
         action="store_true",
         help="跳过 GeoIP 归属地查询，直接按目标站点访问归类（默认开启 GeoIP）",
+    )
+    parser.add_argument(
+        "--no-cache",
+        action="store_true",
+        help="禁用验证/GeoIP 本地缓存（默认启用，断点续跑、避免重复请求）",
     )
     parser.add_argument(
         "--quiet",
@@ -116,6 +123,13 @@ async def run(args: argparse.Namespace) -> int:
     setup_logging(args.quiet)
     logger.info("=== IP 代理池过滤工具开始 ===")
 
+    # 本地缓存（断点续跑 / 去重请求）；--no-cache 时关闭
+    out_dir = Path(config.OUTPUT_DIR)
+    verify_cache = (
+        None if args.no_cache else VerificationCache(out_dir / ".verify_cache.jsonl")
+    )
+    geo_cache = None if args.no_cache else GeoCache(out_dir / ".geo_cache.jsonl")
+
     # 抓取阶段使用独立、更宽松的会话
     fetch_timeout = aiohttp.ClientTimeout(total=config.FETCH_TIMEOUT)
     async with aiohttp.ClientSession(
@@ -129,7 +143,9 @@ async def run(args: argparse.Namespace) -> int:
 
         # 第一步：基础连通性验证（国内目标，国内外代理均可访问）
         logger.info("开始基础连通性验证（目标 %s）...", config.CN_TARGET_URL)
-        valid_proxies = await verify_all(raw_proxies, config.CN_TARGET_URL)
+        valid_proxies = await verify_all(
+            raw_proxies, config.CN_TARGET_URL, cache=verify_cache
+        )
         if not valid_proxies:
             logger.error("没有代理通过基础验证，流程终止")
             return 1
@@ -138,14 +154,15 @@ async def run(args: argparse.Namespace) -> int:
         if args.skip_geoip:
             logger.info("已跳过 GeoIP，直接按目标站点访问归类")
             from proxy_pool.classifier import ClassifyResult
-            from proxy_pool.validator import verify_all as _verify
 
-            foreign_valid = await _verify(valid_proxies, config.FOREIGN_TARGET_URL)
+            foreign_valid = await verify_all(
+                valid_proxies, config.FOREIGN_TARGET_URL, cache=verify_cache
+            )
             foreign_set = {id(p) for p in foreign_valid}
             cn = [p for p in valid_proxies if id(p) not in foreign_set]
             result = ClassifyResult(cn_proxies=cn, foreign_proxies=foreign_valid)
         else:
-            result = await classify(session, valid_proxies)
+            result = await classify(session, valid_proxies, geo_cache=geo_cache)
 
         paths = save_pools(result.cn_proxies, result.foreign_proxies)
 

@@ -16,6 +16,7 @@ from dataclasses import dataclass, field
 import aiohttp
 
 import config
+from proxy_pool.cache import GeoCache
 from proxy_pool.geolocation import query_countries
 from proxy_pool.models import Proxy
 from proxy_pool.validator import verify_all
@@ -30,14 +31,18 @@ class ClassifyResult:
 
 
 async def classify(
-    session: aiohttp.ClientSession, valid_proxies: list[Proxy]
+    session: aiohttp.ClientSession,
+    valid_proxies: list[Proxy],
+    geo_cache: "GeoCache | None" = None,
 ) -> ClassifyResult:
     """对已验证连通性的代理执行归属地分类与二次验证。"""
     if not valid_proxies:
         return ClassifyResult()
 
     # 1. GeoIP 归属地查询
-    country_map = await query_countries(session, [p.ip for p in valid_proxies])
+    country_map = await query_countries(
+        session, [p.ip for p in valid_proxies], geo_cache=geo_cache
+    )
 
     cn_candidates: list[Proxy] = []
     foreign_candidates: list[Proxy] = []

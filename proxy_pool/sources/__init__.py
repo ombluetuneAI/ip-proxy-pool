@@ -33,7 +33,7 @@ def build_sources(sources_cfg: Iterable[dict] | None = None) -> list[BaseSource]
     instances: list[BaseSource] = []
     for cfg in sources_cfg:
         if not cfg.get("enabled", True):
-            continuemonosans-monosans-httphttp
+            continue
         kind = cfg["type"]
         name = cfg["name"]
         try:
