@@ -120,6 +120,8 @@ FOREIGN_TARGET_URL = "https://www.google.com"
 ASSIST_TARGET_URL = "https://httpbin.org/ip"
 
 # ==================== GeoIP 配置 ====================
+# 离线数据库优先：若文件存在则本地查（零网络、零限频），否则回退在线 ip-api
+GEOIP_MMDB_PATH = "geolite2-country.mmdb"
 GEOIP_BATCH_URL = "http://ip-api.com/batch"
 GEOIP_MAX_BATCH = 100        # 每次批量查询的 IP 数上限（免费接口限制）
 GEOIP_RATE_SLEEP = 1.0       # 批量请求间隔（秒），规避 45 次/分钟限频
