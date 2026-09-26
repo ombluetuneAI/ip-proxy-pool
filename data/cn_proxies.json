@@ -1,17 +1,5 @@
 [
   {
-    "ip": "120.232.115.170",
-    "port": 17981,
-    "protocol": "http",
-    "endpoint": "120.232.115.170:17981",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.33,
-    "source": "monosans-http",
-    "verified_at": "2026-08-23T12:37:46+00:00"
-  },
-  {
     "ip": "113.45.195.147",
     "port": 3128,
     "protocol": "http",
@@ -34,6 +22,18 @@
     "latency": 1.179,
     "source": "monosans-http",
     "verified_at": "2026-09-17T03:36:13+00:00"
+  },
+  {
+    "ip": "120.232.115.170",
+    "port": 17981,
+    "protocol": "http",
+    "endpoint": "120.232.115.170:17981",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.33,
+    "source": "monosans-http",
+    "verified_at": "2026-08-23T12:37:46+00:00"
   },
   {
     "ip": "47.107.107.24",
@@ -118,6 +118,18 @@
     "latency": 1.363,
     "source": "thespeedx-http",
     "verified_at": "2026-08-23T12:37:46+00:00"
+  },
+  {
+    "ip": "36.155.23.163",
+    "port": 10808,
+    "protocol": "socks5",
+    "endpoint": "36.155.23.163:10808",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 2.455,
+    "source": "geonode",
+    "verified_at": ""
   },
   {
     "ip": "113.249.111.67",
@@ -1402,18 +1414,6 @@
     "latency": 1.365,
     "source": "monosans-http",
     "verified_at": "2026-09-03T22:18:39+00:00"
-  },
-  {
-    "ip": "36.155.23.163",
-    "port": 10808,
-    "protocol": "socks5",
-    "endpoint": "36.155.23.163:10808",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 2.455,
-    "source": "geonode",
-    "verified_at": ""
   },
   {
     "ip": "120.26.125.50",
@@ -4150,5 +4150,29 @@
     "latency": 1.148,
     "source": "stormsia-http",
     "verified_at": "2026-09-26T03:42:50+00:00"
+  },
+  {
+    "ip": "47.108.80.63",
+    "port": 7890,
+    "protocol": "http",
+    "endpoint": "47.108.80.63:7890",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.751,
+    "source": "stormsia-http",
+    "verified_at": "2026-09-26T19:02:13+00:00"
+  },
+  {
+    "ip": "116.28.78.125",
+    "port": 10808,
+    "protocol": "http",
+    "endpoint": "116.28.78.125:10808",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.263,
+    "source": "stormsia-http",
+    "verified_at": "2026-09-26T19:02:13+00:00"
   }
 ]
