@@ -1,15 +1,15 @@
 [
   {
-    "ip": "113.108.63.150",
-    "port": 7890,
+    "ip": "120.232.115.170",
+    "port": 17981,
     "protocol": "http",
-    "endpoint": "113.108.63.150:7890",
+    "endpoint": "120.232.115.170:17981",
     "country": "CN",
     "region": null,
     "city": null,
-    "latency": 1.825,
+    "latency": 1.33,
     "source": "monosans-http",
-    "verified_at": "2026-10-01T15:07:26+00:00"
+    "verified_at": "2026-08-23T12:37:46+00:00"
   },
   {
     "ip": "120.232.115.57",
@@ -24,26 +24,26 @@
     "verified_at": "2026-09-17T03:36:13+00:00"
   },
   {
-    "ip": "120.232.115.170",
-    "port": 17981,
+    "ip": "113.108.63.150",
+    "port": 7890,
     "protocol": "http",
-    "endpoint": "120.232.115.170:17981",
+    "endpoint": "113.108.63.150:7890",
     "country": "CN",
     "region": null,
     "city": null,
-    "latency": 1.33,
+    "latency": 1.825,
     "source": "monosans-http",
-    "verified_at": "2026-08-23T12:37:46+00:00"
+    "verified_at": "2026-10-01T15:07:26+00:00"
   },
   {
-    "ip": "27.185.218.213",
+    "ip": "122.246.3.12",
     "port": 17981,
     "protocol": "http",
-    "endpoint": "27.185.218.213:17981",
+    "endpoint": "122.246.3.12:17981",
     "country": "CN",
     "region": null,
     "city": null,
-    "latency": 1.44,
+    "latency": 1.453,
     "source": "thespeedx-http",
     "verified_at": "2026-08-23T12:37:46+00:00"
   },
@@ -60,16 +60,28 @@
     "verified_at": "2026-08-23T12:37:46+00:00"
   },
   {
-    "ip": "122.246.3.12",
+    "ip": "27.185.218.213",
     "port": 17981,
     "protocol": "http",
-    "endpoint": "122.246.3.12:17981",
+    "endpoint": "27.185.218.213:17981",
     "country": "CN",
     "region": null,
     "city": null,
-    "latency": 1.453,
+    "latency": 1.44,
     "source": "thespeedx-http",
     "verified_at": "2026-08-23T12:37:46+00:00"
+  },
+  {
+    "ip": "47.108.80.63",
+    "port": 7890,
+    "protocol": "http",
+    "endpoint": "47.108.80.63:7890",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.751,
+    "source": "stormsia-http",
+    "verified_at": "2026-09-26T19:02:13+00:00"
   },
   {
     "ip": "113.249.111.67",
@@ -226,18 +238,6 @@
     "latency": 1.185,
     "source": "monosans-http",
     "verified_at": "2026-10-01T15:07:26+00:00"
-  },
-  {
-    "ip": "47.108.80.63",
-    "port": 7890,
-    "protocol": "http",
-    "endpoint": "47.108.80.63:7890",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.751,
-    "source": "monosans-http",
-    "verified_at": "2026-09-26T19:02:13+00:00"
   },
   {
     "ip": "8.137.94.10",
@@ -4606,5 +4606,17 @@
     "latency": 1.384,
     "source": "stormsia-http",
     "verified_at": "2026-10-02T04:14:30+00:00"
+  },
+  {
+    "ip": "223.167.41.69",
+    "port": 1314,
+    "protocol": "socks5",
+    "endpoint": "223.167.41.69:1314",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 2.614,
+    "source": "geonode",
+    "verified_at": ""
   }
 ]
