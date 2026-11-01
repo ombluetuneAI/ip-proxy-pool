@@ -1,13 +1,13 @@
 [
   {
-    "ip": "8.138.217.152",
-    "port": 21001,
+    "ip": "101.251.204.174",
+    "port": 8080,
     "protocol": "http",
-    "endpoint": "8.138.217.152:21001",
+    "endpoint": "101.251.204.174:8080",
     "country": "CN",
     "region": null,
     "city": null,
-    "latency": 2.536,
+    "latency": 1.691,
     "source": "monosans-http",
     "verified_at": "2026-08-23T12:37:46+00:00"
   },
@@ -24,28 +24,28 @@
     "verified_at": "2026-08-23T12:37:46+00:00"
   },
   {
-    "ip": "123.121.122.28",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "123.121.122.28:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.103,
-    "source": "monosans-http",
-    "verified_at": "2026-09-04T18:49:44+00:00"
-  },
-  {
-    "ip": "120.76.101.238",
+    "ip": "8.163.24.236",
     "port": 8080,
     "protocol": "http",
-    "endpoint": "120.76.101.238:8080",
+    "endpoint": "8.163.24.236:8080",
     "country": "CN",
     "region": null,
     "city": null,
-    "latency": 3.587,
+    "latency": 1.16,
     "source": "monosans-http",
-    "verified_at": "2026-09-17T03:36:13+00:00"
+    "verified_at": "2026-10-24T15:26:09+00:00"
+  },
+  {
+    "ip": "106.14.76.15",
+    "port": 3128,
+    "protocol": "http",
+    "endpoint": "106.14.76.15:3128",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.225,
+    "source": "monosans-http",
+    "verified_at": "2026-10-24T08:40:31+00:00"
   },
   {
     "ip": "120.232.115.57",
@@ -60,16 +60,40 @@
     "verified_at": "2026-09-17T03:36:13+00:00"
   },
   {
-    "ip": "221.221.157.102",
+    "ip": "111.192.57.155",
     "port": 8888,
     "protocol": "http",
-    "endpoint": "221.221.157.102:8888",
+    "endpoint": "111.192.57.155:8888",
     "country": "CN",
     "region": null,
     "city": null,
-    "latency": 1.801,
+    "latency": 3.21,
     "source": "monosans-http",
-    "verified_at": "2026-08-30T03:50:22+00:00"
+    "verified_at": "2026-10-26T23:35:09+00:00"
+  },
+  {
+    "ip": "114.244.221.178",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "114.244.221.178:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.182,
+    "source": "monosans-http",
+    "verified_at": "2026-09-17T03:36:13+00:00"
+  },
+  {
+    "ip": "123.121.209.108",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "123.121.209.108:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.378,
+    "source": "monosans-http",
+    "verified_at": "2026-08-26T22:44:26+00:00"
   },
   {
     "ip": "114.248.179.223",
@@ -84,16 +108,256 @@
     "verified_at": "2026-08-26T22:44:26+00:00"
   },
   {
-    "ip": "36.147.78.166",
-    "port": 443,
+    "ip": "221.221.157.102",
+    "port": 8888,
     "protocol": "http",
-    "endpoint": "36.147.78.166:443",
+    "endpoint": "221.221.157.102:8888",
     "country": "CN",
     "region": null,
     "city": null,
-    "latency": 1.618,
+    "latency": 1.801,
     "source": "monosans-http",
-    "verified_at": "2026-10-11T23:28:26+00:00"
+    "verified_at": "2026-08-30T03:50:22+00:00"
+  },
+  {
+    "ip": "123.121.122.28",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "123.121.122.28:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.103,
+    "source": "monosans-http",
+    "verified_at": "2026-09-04T18:49:44+00:00"
+  },
+  {
+    "ip": "114.252.202.38",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "114.252.202.38:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.199,
+    "source": "monosans-http",
+    "verified_at": "2026-11-01T14:45:16+00:00"
+  },
+  {
+    "ip": "120.76.101.238",
+    "port": 8080,
+    "protocol": "http",
+    "endpoint": "120.76.101.238:8080",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 3.587,
+    "source": "monosans-http",
+    "verified_at": "2026-09-17T03:36:13+00:00"
+  },
+  {
+    "ip": "123.121.108.22",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "123.121.108.22:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.118,
+    "source": "monosans-http",
+    "verified_at": "2026-10-23T09:07:14+00:00"
+  },
+  {
+    "ip": "111.194.129.55",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "111.194.129.55:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.278,
+    "source": "monosans-http",
+    "verified_at": "2026-10-18T08:34:01+00:00"
+  },
+  {
+    "ip": "111.192.52.137",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "111.192.52.137:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.107,
+    "source": "monosans-http",
+    "verified_at": "2026-10-23T22:54:33+00:00"
+  },
+  {
+    "ip": "116.196.150.180",
+    "port": 17981,
+    "protocol": "http",
+    "endpoint": "116.196.150.180:17981",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.363,
+    "source": "monosans-http",
+    "verified_at": "2026-08-23T12:37:46+00:00"
+  },
+  {
+    "ip": "120.232.115.170",
+    "port": 17981,
+    "protocol": "http",
+    "endpoint": "120.232.115.170:17981",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.33,
+    "source": "monosans-http",
+    "verified_at": "2026-08-23T12:37:46+00:00"
+  },
+  {
+    "ip": "123.119.24.241",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "123.119.24.241:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.186,
+    "source": "monosans-http",
+    "verified_at": "2026-09-06T18:02:12+00:00"
+  },
+  {
+    "ip": "27.185.218.213",
+    "port": 17981,
+    "protocol": "http",
+    "endpoint": "27.185.218.213:17981",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.44,
+    "source": "monosans-http",
+    "verified_at": "2026-08-23T12:37:46+00:00"
+  },
+  {
+    "ip": "123.121.134.141",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "123.121.134.141:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.225,
+    "source": "monosans-http",
+    "verified_at": "2026-10-13T01:49:53+00:00"
+  },
+  {
+    "ip": "221.221.144.98",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "221.221.144.98:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.352,
+    "source": "monosans-http",
+    "verified_at": "2026-10-17T18:10:54+00:00"
+  },
+  {
+    "ip": "120.24.21.113",
+    "port": 21056,
+    "protocol": "http",
+    "endpoint": "120.24.21.113:21056",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 3.719,
+    "source": "monosans-http",
+    "verified_at": "2026-09-02T22:23:22+00:00"
+  },
+  {
+    "ip": "111.192.56.241",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "111.192.56.241:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.129,
+    "source": "monosans-http",
+    "verified_at": "2026-09-11T18:59:51+00:00"
+  },
+  {
+    "ip": "8.137.98.117",
+    "port": 21056,
+    "protocol": "http",
+    "endpoint": "8.137.98.117:21056",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.67,
+    "source": "monosans-http",
+    "verified_at": "2026-08-24T08:46:23+00:00"
+  },
+  {
+    "ip": "123.121.140.72",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "123.121.140.72:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.134,
+    "source": "monosans-http",
+    "verified_at": "2026-10-22T22:58:11+00:00"
+  },
+  {
+    "ip": "36.147.78.166",
+    "port": 80,
+    "protocol": "http",
+    "endpoint": "36.147.78.166:80",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.9,
+    "source": "monosans-http",
+    "verified_at": "2026-08-29T22:22:53+00:00"
+  },
+  {
+    "ip": "221.221.162.6",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "221.221.162.6:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.673,
+    "source": "monosans-http",
+    "verified_at": "2026-09-18T08:46:47+00:00"
+  },
+  {
+    "ip": "111.201.98.99",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "111.201.98.99:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.644,
+    "source": "monosans-http",
+    "verified_at": "2026-10-06T01:07:54+00:00"
+  },
+  {
+    "ip": "8.138.217.152",
+    "port": 21001,
+    "protocol": "http",
+    "endpoint": "8.138.217.152:21001",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 2.536,
+    "source": "monosans-http",
+    "verified_at": "2026-08-23T12:37:46+00:00"
   },
   {
     "ip": "47.107.107.24",
@@ -108,16 +372,64 @@
     "verified_at": "2026-08-26T22:44:26+00:00"
   },
   {
-    "ip": "27.185.218.213",
-    "port": 17981,
+    "ip": "114.246.194.207",
+    "port": 8888,
     "protocol": "http",
-    "endpoint": "27.185.218.213:17981",
+    "endpoint": "114.246.194.207:8888",
     "country": "CN",
     "region": null,
     "city": null,
-    "latency": 1.44,
+    "latency": 1.371,
     "source": "monosans-http",
-    "verified_at": "2026-08-23T12:37:46+00:00"
+    "verified_at": "2026-09-18T08:46:47+00:00"
+  },
+  {
+    "ip": "123.121.122.142",
+    "port": 8888,
+    "protocol": "http",
+    "endpoint": "123.121.122.142:8888",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.042,
+    "source": "monosans-http",
+    "verified_at": "2026-10-23T03:32:09+00:00"
+  },
+  {
+    "ip": "59.36.239.108",
+    "port": 21133,
+    "protocol": "http",
+    "endpoint": "59.36.239.108:21133",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 2.28,
+    "source": "thespeedx-http",
+    "verified_at": "2026-08-24T16:36:02+00:00"
+  },
+  {
+    "ip": "182.18.83.37",
+    "port": 7890,
+    "protocol": "http",
+    "endpoint": "182.18.83.37:7890",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 3.623,
+    "source": "thespeedx-http",
+    "verified_at": "2026-10-21T23:01:38+00:00"
+  },
+  {
+    "ip": "36.147.78.166",
+    "port": 443,
+    "protocol": "http",
+    "endpoint": "36.147.78.166:443",
+    "country": "CN",
+    "region": null,
+    "city": null,
+    "latency": 1.618,
+    "source": "monosans-http",
+    "verified_at": "2026-10-11T23:28:26+00:00"
   },
   {
     "ip": "123.121.132.234",
@@ -144,30 +456,6 @@
     "verified_at": "2026-10-17T21:58:09+00:00"
   },
   {
-    "ip": "101.251.204.174",
-    "port": 8080,
-    "protocol": "http",
-    "endpoint": "101.251.204.174:8080",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.691,
-    "source": "monosans-http",
-    "verified_at": "2026-08-23T12:37:46+00:00"
-  },
-  {
-    "ip": "116.196.150.180",
-    "port": 17981,
-    "protocol": "http",
-    "endpoint": "116.196.150.180:17981",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.363,
-    "source": "monosans-http",
-    "verified_at": "2026-08-23T12:37:46+00:00"
-  },
-  {
     "ip": "111.192.56.81",
     "port": 8888,
     "protocol": "http",
@@ -190,30 +478,6 @@
     "latency": 1.159,
     "source": "monosans-http",
     "verified_at": "2026-08-29T02:43:07+00:00"
-  },
-  {
-    "ip": "123.121.140.72",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "123.121.140.72:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.134,
-    "source": "monosans-http",
-    "verified_at": "2026-10-22T22:58:11+00:00"
-  },
-  {
-    "ip": "114.244.221.178",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "114.244.221.178:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.182,
-    "source": "monosans-http",
-    "verified_at": "2026-09-17T03:36:13+00:00"
   },
   {
     "ip": "114.246.207.184",
@@ -240,18 +504,6 @@
     "verified_at": "2026-09-03T03:07:16+00:00"
   },
   {
-    "ip": "120.232.115.170",
-    "port": 17981,
-    "protocol": "http",
-    "endpoint": "120.232.115.170:17981",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.33,
-    "source": "monosans-http",
-    "verified_at": "2026-08-23T12:37:46+00:00"
-  },
-  {
     "ip": "114.246.203.194",
     "port": 8888,
     "protocol": "http",
@@ -262,18 +514,6 @@
     "latency": 1.158,
     "source": "monosans-http",
     "verified_at": "2026-09-17T09:13:53+00:00"
-  },
-  {
-    "ip": "123.121.108.22",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "123.121.108.22:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.118,
-    "source": "monosans-http",
-    "verified_at": "2026-10-23T09:07:14+00:00"
   },
   {
     "ip": "8.138.16.247",
@@ -312,42 +552,6 @@
     "verified_at": "2026-10-17T15:01:15+00:00"
   },
   {
-    "ip": "123.121.122.142",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "123.121.122.142:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.042,
-    "source": "monosans-http",
-    "verified_at": "2026-10-23T03:32:09+00:00"
-  },
-  {
-    "ip": "8.163.24.236",
-    "port": 8080,
-    "protocol": "http",
-    "endpoint": "8.163.24.236:8080",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.16,
-    "source": "monosans-http",
-    "verified_at": "2026-10-24T15:26:09+00:00"
-  },
-  {
-    "ip": "123.121.134.141",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "123.121.134.141:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.225,
-    "source": "monosans-http",
-    "verified_at": "2026-10-13T01:49:53+00:00"
-  },
-  {
     "ip": "111.192.54.13",
     "port": 8888,
     "protocol": "http",
@@ -370,18 +574,6 @@
     "latency": 3.368,
     "source": "monosans-http",
     "verified_at": "2026-08-23T12:37:46+00:00"
-  },
-  {
-    "ip": "114.246.194.207",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "114.246.194.207:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.371,
-    "source": "monosans-http",
-    "verified_at": "2026-09-18T08:46:47+00:00"
   },
   {
     "ip": "123.121.122.95",
@@ -466,18 +658,6 @@
     "latency": 4.707,
     "source": "thespeedx-http",
     "verified_at": "2026-10-21T03:27:45+00:00"
-  },
-  {
-    "ip": "59.36.239.108",
-    "port": 21133,
-    "protocol": "http",
-    "endpoint": "59.36.239.108:21133",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 2.28,
-    "source": "thespeedx-http",
-    "verified_at": "2026-08-24T16:36:02+00:00"
   },
   {
     "ip": "121.43.176.35",
@@ -576,18 +756,6 @@
     "verified_at": "2026-08-31T03:53:13+00:00"
   },
   {
-    "ip": "221.221.144.98",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "221.221.144.98:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.352,
-    "source": "monosans-http",
-    "verified_at": "2026-10-17T18:10:54+00:00"
-  },
-  {
     "ip": "47.95.206.224",
     "port": 45144,
     "protocol": "http",
@@ -598,18 +766,6 @@
     "latency": 4.318,
     "source": "monosans-http",
     "verified_at": "2026-10-31T19:44:10+00:00"
-  },
-  {
-    "ip": "111.201.98.99",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "111.201.98.99:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.644,
-    "source": "monosans-http",
-    "verified_at": "2026-10-06T01:07:54+00:00"
   },
   {
     "ip": "222.211.216.201",
@@ -634,30 +790,6 @@
     "latency": 4.355,
     "source": "geonode",
     "verified_at": ""
-  },
-  {
-    "ip": "221.221.162.6",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "221.221.162.6:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.673,
-    "source": "monosans-http",
-    "verified_at": "2026-09-18T08:46:47+00:00"
-  },
-  {
-    "ip": "8.137.98.117",
-    "port": 21056,
-    "protocol": "http",
-    "endpoint": "8.137.98.117:21056",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.67,
-    "source": "monosans-http",
-    "verified_at": "2026-08-24T08:46:23+00:00"
   },
   {
     "ip": "39.96.71.208",
@@ -1164,18 +1296,6 @@
     "verified_at": "2026-10-08T04:41:17+00:00"
   },
   {
-    "ip": "111.192.57.155",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "111.192.57.155:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 3.21,
-    "source": "monosans-http",
-    "verified_at": "2026-10-26T23:35:09+00:00"
-  },
-  {
     "ip": "111.192.42.139",
     "port": 8888,
     "protocol": "http",
@@ -1392,18 +1512,6 @@
     "verified_at": "2026-10-16T03:17:59+00:00"
   },
   {
-    "ip": "111.192.52.137",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "111.192.52.137:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.107,
-    "source": "monosans-http",
-    "verified_at": "2026-10-23T22:54:33+00:00"
-  },
-  {
     "ip": "120.204.84.132",
     "port": 7890,
     "protocol": "http",
@@ -1618,30 +1726,6 @@
     "latency": 1.075,
     "source": "monosans-http",
     "verified_at": "2026-09-10T22:16:43+00:00"
-  },
-  {
-    "ip": "36.147.78.166",
-    "port": 80,
-    "protocol": "http",
-    "endpoint": "36.147.78.166:80",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.9,
-    "source": "monosans-http",
-    "verified_at": "2026-08-29T22:22:53+00:00"
-  },
-  {
-    "ip": "182.18.83.37",
-    "port": 7890,
-    "protocol": "http",
-    "endpoint": "182.18.83.37:7890",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 3.623,
-    "source": "thespeedx-http",
-    "verified_at": "2026-10-21T23:01:38+00:00"
   },
   {
     "ip": "112.5.33.179",
@@ -2892,18 +2976,6 @@
     "verified_at": "2026-09-11T08:36:21+00:00"
   },
   {
-    "ip": "120.24.21.113",
-    "port": 21056,
-    "protocol": "http",
-    "endpoint": "120.24.21.113:21056",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 3.719,
-    "source": "monosans-http",
-    "verified_at": "2026-09-02T22:23:22+00:00"
-  },
-  {
     "ip": "47.107.82.96",
     "port": 30051,
     "protocol": "http",
@@ -4044,18 +4116,6 @@
     "verified_at": "2026-08-29T02:43:07+00:00"
   },
   {
-    "ip": "123.121.209.108",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "123.121.209.108:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.378,
-    "source": "monosans-http",
-    "verified_at": "2026-08-26T22:44:26+00:00"
-  },
-  {
     "ip": "114.244.214.18",
     "port": 8888,
     "protocol": "http",
@@ -4282,18 +4342,6 @@
     "latency": 1.327,
     "source": "monosans-http",
     "verified_at": "2026-09-18T03:21:51+00:00"
-  },
-  {
-    "ip": "123.119.24.241",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "123.119.24.241:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.186,
-    "source": "monosans-http",
-    "verified_at": "2026-09-06T18:02:12+00:00"
   },
   {
     "ip": "114.249.210.133",
@@ -4774,18 +4822,6 @@
     "latency": 4.129,
     "source": "monosans-http",
     "verified_at": "2026-08-23T12:37:46+00:00"
-  },
-  {
-    "ip": "111.192.56.241",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "111.192.56.241:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.129,
-    "source": "monosans-http",
-    "verified_at": "2026-09-11T18:59:51+00:00"
   },
   {
     "ip": "111.192.56.213",
@@ -7356,18 +7392,6 @@
     "verified_at": "2026-10-18T03:11:26+00:00"
   },
   {
-    "ip": "111.194.129.55",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "111.194.129.55:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.278,
-    "source": "monosans-http",
-    "verified_at": "2026-10-18T08:34:01+00:00"
-  },
-  {
     "ip": "111.196.26.217",
     "port": 8888,
     "protocol": "http",
@@ -7628,18 +7652,6 @@
     "region": null,
     "city": null,
     "latency": 1.307,
-    "source": "monosans-http",
-    "verified_at": "2026-10-24T08:40:31+00:00"
-  },
-  {
-    "ip": "106.14.76.15",
-    "port": 3128,
-    "protocol": "http",
-    "endpoint": "106.14.76.15:3128",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.225,
     "source": "monosans-http",
     "verified_at": "2026-10-24T08:40:31+00:00"
   },
@@ -7978,17 +7990,5 @@
     "latency": 1.766,
     "source": "monosans-http",
     "verified_at": "2026-10-31T19:44:10+00:00"
-  },
-  {
-    "ip": "114.252.202.38",
-    "port": 8888,
-    "protocol": "http",
-    "endpoint": "114.252.202.38:8888",
-    "country": "CN",
-    "region": null,
-    "city": null,
-    "latency": 1.199,
-    "source": "monosans-http",
-    "verified_at": "2026-11-01T14:45:16+00:00"
   }
 ]
